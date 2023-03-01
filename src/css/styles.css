@@ -1,0 +1,30 @@
+.container {}
+
+.header__wrapper {}
+
+.logo {}
+.logo .logo__img {}
+
+.menu {}
+.menu .menu__item {}
+.menu .menu__item.menu__item--active {}
+
+.main__wrapper {}
+
+.mainArticle {}
+.mainArticle .mainArticle__hdl{}
+.mainArticle .mainArticle__text {}
+.mainArticle .mainArticle__related {}
+
+.related {}
+.related .related__item {}
+
+.aside {}
+.aside .aside__item {}
+
+.footer__wrapper {}
+
+.secondaryMenu {}
+.secondaryMenu .secondaryMenu__item {}
+
+.copyright {}
