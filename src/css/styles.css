@@ -1,30 +1,134 @@
-.container {}
+.container {
+    max-width: 1200px;
+    width: 100%;
+    background-color: lightblue;
+    margin-inline: auto;
+}
 
-.header__wrapper {}
+.header__wrapper {
+    background-color: lightpink;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
 
-.logo {}
-.logo .logo__img {}
+.logo {
+    width: 94px;
+    height: 94px;
+    background-color: darkblue;
+    display: inline-block;
+    margin: 10px;
+}
 
-.menu {}
-.menu .menu__item {}
-.menu .menu__item.menu__item--active {}
+.logo .logo__img {
+}
 
-.main__wrapper {}
+.menu {
+    background-color: lightgoldenrodyellow;
+}
 
-.mainArticle {}
-.mainArticle .mainArticle__hdl{}
-.mainArticle .mainArticle__text {}
-.mainArticle .mainArticle__related {}
+.menu .menu__item {
+    padding: 10px;
+    display: inline-block;
+    margin-inline: 10px;
+    background-color: red;
+}
 
-.related {}
-.related .related__item {}
+.menu .menu__item.menu__item--active {
+}
 
-.aside {}
-.aside .aside__item {}
+.main__wrapper {
+    background-color: lightcyan;
+    display: flex;
+    flex-direction: column;
+}
 
-.footer__wrapper {}
+@media screen and (min-width: 650px) {
+    .main__wrapper {
+        flex-direction: row;
+    }
+}
 
-.secondaryMenu {}
-.secondaryMenu .secondaryMenu__item {}
+.mainArticle {
+    background-color: lightcoral;
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
-.copyright {}
+.mainArticle .mainArticle__hdl {
+}
+
+.mainArticle .mainArticle__text {
+}
+
+.mainArticle .mainArticle__related {
+}
+
+.related {
+    background-color: lightseagreen;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    max-width: 400px;
+    align-self: center;
+    /*margin-inline: auto;*/
+}
+
+.related .related__item {
+    width: 100px;
+    height: 100px;
+    background-color: greenyellow;
+    margin: 5px;
+}
+
+.aside {
+    background-color: gold;
+    display: flex;
+    justify-content: center;
+    order: -10;
+}
+
+@media screen and (min-width: 400px){
+    .aside {
+        order: 0;
+    }
+}
+
+@media screen and (min-width: 650px) {
+    .aside {
+        flex-direction: column;
+        justify-content: space-around;
+    }
+}
+
+.aside .aside__item {
+    width: 100px;
+    height: 100px;
+    background-color: silver;
+    margin: 10px;
+}
+
+.footer__wrapper {
+    background-color: lightsalmon;
+    min-height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.secondaryMenu {
+}
+
+.secondaryMenu .secondaryMenu__item {
+}
+
+.copyright {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    margin: 0;
+}
